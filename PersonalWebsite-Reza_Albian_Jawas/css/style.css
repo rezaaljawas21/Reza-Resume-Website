@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+nav {
+    background-color: orangered;
+    padding: 0 auto;
+    top: 0;
+
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    overflow: auto;
+    float: left;
+    position: absolute;
+    padding: 0 auto;
+    border: 5px solid rgba(20, 20, 20, 0.65);
+    margin: 20px 80px;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;   
+}
+
+.card {
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.navigation-bar {
+    font-size: 20px;
+    padding: 1px;
+    width: 100%;
+    background-color: orangered;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+}
+
+#content {
+    float: right; 
+    width: 65%;
+    margin-left: 10px;
+}
+
+aside h1, p {
+    text-align: right;
+    position: none;
+}
+aside {
+    position: fixed;
+    width: 35%;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-left: 0;
+    overflow: auto;
+    padding-top: 0;
+}
+
+aside article {
+    background-color: whitesmoke;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color:   orangered;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid orangered;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 80px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px dotted #888;
+    width: 80%;
+}
+
+.modal-content p{
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    font-weight: bold;
+}
+
+[id] {
+    scroll-margin-top: 3em;
+}
+
+.btn {
+    display: none;
+    background-color: dodgerblue;
+    border: none;
+    color: whitesmoke;
+    padding: : 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: royalblue;
+}
+
+@media screen and (max-width: 1000px) {
+    .navigation-bar{
+        position: fixed;
+    }
+    .navigation-bar img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 25px;
+    }
+    #content,
+    aside {
+        position: initial;
+        width: 100%;
+        padding: 0;
+    }
+    .btn {
+        display: block;
+        padding: 10px;
+        border-radius: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    nav ul {
+        position: static;
+    }
+    nav li {
+        text-align: right;
+        margin: 1px auto;
+    }
+    nav ul, li, li a {
+        width: 100%;
+    }
+    .navigation-bar {
+        font-size: auto;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding-bottom: 10px;
+    }
+    .navbar-toggle {
+        position: relative;
+        top: 5px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .main-nav {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    [id] {
+        scroll-margin-top: 15em;
+    }
+    aside h1, p {
+        text-align: center;
+        position: none;
+    }
+}
