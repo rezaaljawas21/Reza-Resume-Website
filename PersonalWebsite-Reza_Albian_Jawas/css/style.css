@@ -256,3 +256,12 @@ footer {
         position: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .navigation-bar img {
+        width: 70px;
+        height: 70px;
+        margin: 10px 25px;
+        position: absolute;
+    }
+}
